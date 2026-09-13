@@ -1,0 +1,16 @@
+{
+  "name": "LMS Platform",
+  "short_name": "LMS",
+  "description": "A modern learning management platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

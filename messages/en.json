@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appName": "LMS Platform",
+    "tagline": "Learn Without Limits",
+    "browseCourses": "Browse Courses",
+    "getStarted": "Get Started",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "dashboard": "Dashboard",
+    "courses": "Courses",
+    "students": "Students",
+    "settings": "Settings",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "loading": "Loading..."
+  },
+  "auth": {
+    "welcomeBack": "Welcome back",
+    "createAccount": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name"
+  },
+  "courses": {
+    "explore": "Explore Courses",
+    "noCourses": "No courses available yet.",
+    "enrollFree": "Enroll for Free",
+    "continueLearning": "Continue Learning",
+    "curriculum": "Curriculum"
+  }
+}
