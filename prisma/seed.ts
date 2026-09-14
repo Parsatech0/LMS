@@ -21,6 +21,7 @@ async function main() {
       password: ownerPassword,
       role: UserRole.OWNER,
       emailVerified: new Date(),
+      phone: '+989123456789',
     },
   })
   console.log('✅ Owner user created:', owner.email)
@@ -36,6 +37,7 @@ async function main() {
       password: adminPassword,
       role: UserRole.ADMIN,
       emailVerified: new Date(),
+      phone: '+989123456788',
     },
   })
   console.log('✅ Admin user created:', admin.email)
@@ -51,6 +53,7 @@ async function main() {
       password: instructorPassword,
       role: UserRole.INSTRUCTOR,
       emailVerified: new Date(),
+      phone: '+989123456787',
     },
   })
   console.log('✅ Instructor user created:', instructor.email)
@@ -67,6 +70,7 @@ async function main() {
         password: studentPassword,
         role: UserRole.STUDENT,
         emailVerified: new Date(),
+        phone: '+989123456786',
       },
     }),
     prisma.user.upsert({
@@ -78,6 +82,7 @@ async function main() {
         password: studentPassword,
         role: UserRole.STUDENT,
         emailVerified: new Date(),
+        phone: '+989123456785',
       },
     }),
   ])

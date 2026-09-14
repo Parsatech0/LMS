@@ -3,6 +3,7 @@ import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Phone } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
 
@@ -26,9 +27,17 @@ export default async function StudentsPage() {
         <CardContent className="space-y-2">
           {students.map((s) => (
             <div key={s.id} className="flex items-center justify-between rounded-lg border p-3">
-              <div>
-                <p className="font-medium">{s.name || 'Unnamed'}</p>
-                <p className="text-sm text-muted-foreground">{s.email}</p>
+              <div className="flex items-center gap-4">
+                <div>
+                  <p className="font-medium">{s.name || 'Unnamed'}</p>
+                  <p className="text-sm text-muted-foreground">{s.email}</p>
+                  {s.phone && (
+                    <p className="text-sm text-muted-foreground flex items-center gap-1 mt-1">
+                      <Phone className="h-3 w-3" />
+                      {s.phone}
+                    </p>
+                  )}
+                </div>
               </div>
               <Badge variant="outline">{s._count.enrollments} enrollments</Badge>
             </div>
